@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 5rem;
+    align-items: center;
+  }
+  header a img {
+    width: 35%;
+  }
+  .btnHeader {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin-right: 2.5em;
+    transition: 0.8s all;
+  }
+  .btnHeader:hover {
+    cursor: pointer;
+    background-color: #21233d;
+    border: solid 0.1px red;
+  }
