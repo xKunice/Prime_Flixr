@@ -1,0 +1,13 @@
+.text-input{
+    margin: 24px 0;
+
+}
+.text-input label{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+.text-input input{
+    width: 100%;
+    border: none;
+}

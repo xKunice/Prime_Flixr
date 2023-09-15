@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./movie.css";
+import Banner from "./banner/Banner"
 
 function Movie(props) {
   const [data, setData] = useState(null);
@@ -27,7 +28,7 @@ function Movie(props) {
 
   return (
     <>
-      <h1>Películas</h1>
+    <Banner/>
       {loading ? (
         <p>Loading...</p>
       ) : error ? (

@@ -1,0 +1,19 @@
+.container__form{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.container__form form{
+    max-width: 90%;
+    background-color: darkgrey;
+    border-radius: 20px;
+    box-shadow: 7px 7px  10px black ;
+    padding: 8px 100px;
+
+}
+.container__form form  h2{
+    font-size: 3em;
+    color: black;
+    text-shadow: 2px 2px  3px black ;;
+}

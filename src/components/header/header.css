@@ -4,18 +4,20 @@ header {
     background-color: black;
     height: 5rem;
     align-items: center;
+    border-bottom: solid 1px whitesmoke;
   }
   header a img {
     width: 35%;
   }
   .btnHeader {
-    background-color: gray;
+    background-color: black;
     color: white;
     text-decoration: none;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     margin-right: 2.5em;
     transition: 0.8s all;
+    border: solid 1px white;
   }
   .btnHeader:hover {
     cursor: pointer;

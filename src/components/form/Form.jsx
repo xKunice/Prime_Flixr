@@ -1,8 +1,21 @@
-import { useLocation } from "react-router-dom"
-
+import { useState } from "react"
+import "./form.css"
+import TextInput from "./textInput/textInput";
 function Form (){ 
+
+    const [name, setName] = useState();
+
+
 return(
-    <h1>soy un formulario</h1>
+    <section className="container__form">
+        <form action="">
+            <h2>Nuevo video</h2>
+            <TextInput/>
+
+        </form>
+    </section>
+    
+
 )
 }
 
