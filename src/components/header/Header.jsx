@@ -1,12 +1,16 @@
 import "./header.css"
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
+import Button from "../button/Button";
 
 
-function Header(props) {
-  const { buttonText} = props;
+function Header() {
+  const buttonText = "Nuevo Video";
+  const clase = ".btnheader";
   const location = useLocation();
   const showButton = location.pathname !== '/form/'
+  
+  
 
   return (
     <header>
@@ -15,7 +19,7 @@ function Header(props) {
       </Link>
       {showButton && (
         <Link to="/form/">
-          <button className="btnHeader">{buttonText}</button>
+          <Button clase="btnHeader" text={buttonText} />
         </Link>
       )} 
 

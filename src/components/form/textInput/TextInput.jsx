@@ -4,7 +4,7 @@ const TextInput = (props) =>{
 
     return <div className="text-input">
         <label>Andres</label>
-        <input placeholder="" />
+        <input placeholder="" name="a" />
     </div>
 }
 
