@@ -1,15 +1,44 @@
 .banner{
-    background-image: url('https://image.tmdb.org/t/p/original/gPbM0MK8CP8A174rmUwGsADNYKD.jpg');
     background-size: cover ;
+    background:url('https://image.tmdb.org/t/p/original/gPbM0MK8CP8A174rmUwGsADNYKD.jpg') ;
     background-position: center;
-    justify-content: space-around;
     width: auto;
-    height: 832px;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    
+    height: 720px;
 }
+
+.banner__content{
+    display: flex;
+    background-color: rgba(71, 71, 71, 0.6);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:100px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+.container__texto{
+
+    background-color: rgba(119, 119, 119, 0.2);
+}
+.container__texto h2{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+.container__texto p{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+.container__texto span{
+    font-weight: bold;
+    color: aliceblue;
+}
+.container__texto .spanDB{
+    font-weight: 700;
+    color: rgb(0, 0, 59);
+}
+
 .container__video{
-    padding-top: 357px
 }
