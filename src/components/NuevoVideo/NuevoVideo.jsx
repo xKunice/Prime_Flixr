@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./nuevoVideo.css";
-import TextInput from "./textInput/textInput";
+import TextInput from "./textInput/TextInput";
 import Button from "../button/Button";
 function NuevoVideo() {
   const [name, setName] = useState();
@@ -10,10 +10,10 @@ function NuevoVideo() {
     <section className="container__form">
       <form action="">
         <h2>Nuevo video</h2>
-        <TextInput inputName="Titulo de la Pelicula" />
-        <TextInput inputName="Link de la Portada" />
-        <TextInput inputName="Link del trailer" />
-        <TextInput inputName="Codigo de Seguridad" />
+        <TextInput inputName="titulo de la pelicula" />
+        <TextInput inputName="link de la Portada" />
+        <TextInput inputName="link del trailer" />
+        <TextInput inputName="codigo de seguridad" />
       </form>
 
       <div className="botonera">
