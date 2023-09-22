@@ -1,10 +1,13 @@
-import "./button.css"
+import "./button.css";
 
-function Button(props){
-    const {clase, text}= props;
+function Button(props) {
+  const { clase, text, typeB } = props;
 
-    return(
-    <button className={clase}>{text}</button>);
+  return (
+    <button type={typeB} className={clase}>
+      {text}
+    </button>
+  );
 }
 
 export default Button;

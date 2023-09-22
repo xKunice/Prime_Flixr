@@ -1,31 +1,30 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./nuevoVideo.css";
-import TextInput from "./textInput/TextInput";
-import Button from "../button/Button";
+import Form from "../form/Form";
 function NuevoVideo() {
-  const [name, setName] = useState();
+  const formTitle = "Nuevo Video";
+  const selectOptions = [
+    { value: "option1", label: "Opción 1" },
+    { value: "option2", label: "Opción 2" },
+    { value: "option3", label: "Opción 3" },
+  ];
 
+  const inputs = [
+    { name: "titulo", label: "titulo de la pelicula" },
+    { name: "portada", label: "Link de la portada" },
+    { name: "trailer", label: "Link del trailer" },
+    { name: "descripcion", label: "Descripcion", type: "textArea" },
+    {
+      name: "categoria",
+      label: "categoria",
+      type: "select",
+      options: selectOptions,
+    },
+    { name: "codigo de seguridad", label: "codigo de seguridad" },
+  ];
   return (
-    <section className="container__form">
-      <form action="">
-        <h2>Nuevo video</h2>
-        <TextInput inputName="titulo de la pelicula" />
-        <TextInput inputName="link de la Portada" />
-        <TextInput inputName="link del trailer" />
-        <TextInput inputName="codigo de seguridad" />
-      </form>
-
-      <div className="botonera">
-        <div>
-          <Button text="Guardar" />
-          <Button text="limpiar" />
-        </div>
-        <Link to="/NuevaCategoria/">
-          <Button text="Nueva Categoria" />
-        </Link>
-      </div>
-    </section>
+    <>
+      <Form inputs={inputs} formTitle={formTitle} />
+    </>
   );
 }
 

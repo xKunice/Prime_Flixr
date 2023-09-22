@@ -1,0 +1,35 @@
+.container__form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px ;
+    align-items: center;
+}
+
+.container__form form{
+    display: flex;
+    flex-direction: column;
+    background-color: darkgrey;
+    border-radius: 20px;
+    box-shadow: 7px 7px  10px black ;
+    padding: 8px 10px;
+    width: max-content;
+    width: 40%;
+}
+.container__form form  h2{
+    font-size: 3em;
+    color: black;
+    text-shadow: 2px 2px  3px black ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.botonera{
+    display: flex;
+    flex-direction: row;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
