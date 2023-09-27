@@ -2,8 +2,6 @@ import { useState } from "react";
 import Form from "../form/Form";
 import "./nuevacategoria.css";
 function NuevaCategoria() {
-  const [name, setName] = useState();
-
   const formTitle = "Nueva Categoria";
   const inputs = [
     { name: "Nombre", label: "Nombre" },
